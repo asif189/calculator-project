@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="project 2.css">
+  <title>make calculator</title>
+</head>
+<body>
+   <div class="calc-contain">
+    <h2>calculator</h2>
+    <div class="output">
+      <form name="cal">
+        <input id="display" type="text" name="display" placeholder="0" readonly>
+        <tr>
+          <input class="button" type="button" value="7" onclick="cal.display.value +='7'">
+          <input class="button" type="button" value="8" onclick="cal.display.value +='8'">
+          <input class="button" type="button" value="9" onclick="cal.display.value +='9'">
+          <input class="button numbutton" type="button" value="%" onclick="cal.display.value +='/'">
+          </tr>
+
+          <input class="button" type="button" value="4" onclick="cal.display.value +='4'">
+          <input class="button" type="button" value="5" onclick="cal.display.value +='5'">
+          <input class="button" type="button" value="6" onclick="cal.display.value +='6'">
+          <input class="button numbutton" type="button" value="x" onclick="cal.display.value +='*'">
+         </tr>
+
+          <input class="button" type="button" value="1" onclick="cal.display.value +='1'">
+          <input class="button" type="button" value="2" onclick="cal.display.value +='2'">
+          <input class="button" type="button" value="3" onclick="cal.display.value +='3'">
+          <input class="button numbutton" type="button" value="-" onclick="cal.display.value +='-'">
+         </tr>
+
+          <input class="button" type="button" value="." onclick="cal.display.value +='.'">
+          <input class="button" type="button" value="0" onclick="cal.display.value +='0'">
+          <input class="button numbuttons" type="button" value="=" onclick="cal.display.value =eval(cal.display.value)">
+          <input class="button numbutton" type="button" value="+" onclick="cal.display.value +='+'">
+          <input class="buttons numbutton-c" type="button" value="c" onclick="cal.display.value =''">
+        </tr>
+      </form>
+    </div>
+   </div>
+</body>
+</html>
